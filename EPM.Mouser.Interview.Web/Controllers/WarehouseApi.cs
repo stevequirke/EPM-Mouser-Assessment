@@ -6,7 +6,6 @@ namespace EPM.Mouser.Interview.Web.Controllers
     {
 
         /*
-         *  Action: GET
          *  Url: api/warehouse/id
          *  This action should return a single product for an Id
          */
@@ -16,12 +15,10 @@ namespace EPM.Mouser.Interview.Web.Controllers
         }
 
         /*
-         *  Action: GET
          *  Url: api/warehouse
          *  This action should return a collection of products in stock
          *  In stock means In Stock Quantity is greater than zero and In Stock Quantity is greater than the Reserved Quantity
          */
-        [HttpGet]
         public JsonResult GetPublicInStockProducts()
         {
             return Json(null);
@@ -29,7 +26,6 @@ namespace EPM.Mouser.Interview.Web.Controllers
 
 
         /*
-         *  Action: GET
          *  Url: api/warehouse/order
          *  This action should return a EPM.Mouser.Interview.Models.UpdateResponse
          *  This action should have handle an input parameter of EPM.Mouser.Interview.Models.UpdateQuantityRequest in JSON format in the body of the request
