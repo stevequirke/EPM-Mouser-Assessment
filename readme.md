@@ -12,7 +12,7 @@ A DLL has been provided (EPM.Mouser.Interview.Data) which provides a data repo a
 The data layer is 'faked' and initialized on startup so don't expect the same data between debug sessions (but it is persisted between requests).
 
 
-Document any questions you'd ask and then also put your assumptions (in leau of asking the questions).  Also highlight any improvements you've made to the orgional requirements.'
+Document any questions you'd ask and then also put your assumptions (in lieu of asking the questions).  Also highlight any improvements you've made to the orgional requirements.'
 Feel free to also suggest what else could be done out side the scope of the requested changes.
 Also document any enhancements you would apply.
 
