@@ -118,7 +118,7 @@ namespace EPM.Mouser.Interview.Web.Controllers
         *       UNIQUE Name requirements
         *          - No two products can have the same name
         *          - Names should have no leading or trailing whitespace before checking for uniqueness
-        *          - If a new name is not unique then append "(1)" to the name [like windows file system does]
+        *          - If a new name is not unique then append "(x)" to the name [like windows file system does, where x is the next avaiable number]
         *
         *
         *  This action should return failure (success = false) and an empty Model property when:
