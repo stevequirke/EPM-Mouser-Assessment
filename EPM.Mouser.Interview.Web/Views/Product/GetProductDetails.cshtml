@@ -1,0 +1,35 @@
+﻿@model EPM.Mouser.Interview.Models.Product
+
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<form method="post">
+    <!-- <input asp-for="Address.StudentAddressId" hidden /> -->
+    <!-- <input asp-for="StudentId" hidden />-->
+    <div class="border p-3 mt-4">
+        <div class="row pb-2">
+            <h2 class="text-primary">Edit Product</h2>
+            <hr />
+        </div>
+        <div asp-validation-summary="All"></div>
+        <div class="mb-3">
+            <label asp-for="Id"> </label>
+            <input asp-for="Id" class="form-control" />
+            <!--<span asp-validation-for="Name" class="text-danger"></span>-->
+        </div>
+        <div class="mb-3">
+            <label asp-for="Name"> </label>
+            <input asp-for="Name" class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label asp-for="InStockQuantity"> </label>
+            <input asp-for="InStockQuantity" class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label asp-for="ReservedQuantity"> </label>
+            <input asp-for="ReservedQuantity" class="form-control" />
+        </div>
+        <a asp-controller="Home" asp-action="Index" class="btn btn-secondary" style="width:150px">
+            Back to List
+        </a>
+    </div>
+</form>

@@ -1,0 +1,17 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/EPM.Mouser.Interview.Web.PersonController.Tests/obj
+/EPM.Mouser.Interview.Web/obj
+/EPM.Mouser.Interview.Web/bin/Debug/net6.0
+/EPM.Mouser.Interview.Web.PersonController.Tests/bin/Debug/net6.0
+/EPM.Mouser.Interview.WarehouseAPi.Tests/obj
+/EPM.Mouser.Interview.WarehouseAPi.Tests/bin/Debug/net6.0
+/.vs/EPM.Mouser.Interview/config/applicationhost.config
+/.vs/EPM.Mouser.Interview/DesignTimeBuild
+/.vs/EPM.Mouser.Interview/FileContentIndex
+/.vs/EPM.Mouser.Interview/v17/TestStore/0
+/.vs/EPM.Mouser.Interview/v17
+/.vs/Interview/v17/.wsuo
+/EPM.Mouser.Interview.Web/EPM.Mouser.Interview.Web.csproj.user

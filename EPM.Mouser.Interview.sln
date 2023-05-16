@@ -1,13 +1,20 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.32106.194
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EPM.Mouser.Interview.Web", "EPM.Mouser.Interview.Web\EPM.Mouser.Interview.Web.csproj", "{6FA7BEF1-96A3-44B7-A1C4-52193DB39B63}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DLL", "DLL", "{77367EA8-06E6-4285-93C4-CD6FABF3A2B5}"
 	ProjectSection(SolutionItems) = preProject
 		DLL\EPM.Mouser.Interview.Data.dll = DLL\EPM.Mouser.Interview.Data.dll
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EPM.Mouser.Interview.WarehouseAPi.Tests", "EPM.Mouser.Interview.WarehouseAPi.Tests\EPM.Mouser.Interview.WarehouseAPi.Tests.csproj", "{19F517B5-4A64-4CB4-AC15-B40D71BFE1D0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{771AE4A7-62CC-4BDD-8C6B-01D8E194DC10}"
+	ProjectSection(SolutionItems) = preProject
+		findings.txt = findings.txt
 	EndProjectSection
 EndProject
 Global
@@ -20,6 +27,10 @@ Global
 		{6FA7BEF1-96A3-44B7-A1C4-52193DB39B63}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6FA7BEF1-96A3-44B7-A1C4-52193DB39B63}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6FA7BEF1-96A3-44B7-A1C4-52193DB39B63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19F517B5-4A64-4CB4-AC15-B40D71BFE1D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19F517B5-4A64-4CB4-AC15-B40D71BFE1D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19F517B5-4A64-4CB4-AC15-B40D71BFE1D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19F517B5-4A64-4CB4-AC15-B40D71BFE1D0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

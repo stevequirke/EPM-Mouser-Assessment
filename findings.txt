@@ -1,0 +1,33 @@
+Understanding.
+
+
+
+I was a bit confused on the link for each product on the list of products.
+
+ - action => with a link to a 'placeholder' product detail page.
+ I assumed that this would call a ProductController , call the WarehouseAPI and return view for product and this is what I did.
+ 'placeholder' I was thinking is this ajax because of word 'placeholder but i opted for former.
+
+The warehouseAPI code I tested with Postman.
+Did some unit tests for warehouseapi.
+
+
+Improvements
+
+There was a lot of checking of parameters it could be improved by adding DataAnnotations to the Product Model, and then calling 
+(ModelState.IsValid) in the controller. So for product Id field this would be a required field - annotation [Required].
+
+[DisplayName] annotation so labels in the views are are for example 'Total Amount' rather  than total amount.
+
+[Range(0 ....)] annotation for quantity.
+
+For the warehouse repository I would split this into smaller api's, order api ,  product api etc etc, as I can imagine this api growing over time , 
+as there is a lot of operations can be performed on an api.
+
+I would also use some authentication like jwt , and setup some policies/roles/claims for users, so that user can be authenticated, 
+and then the methods of the api could be decorated/or not decorated with the Authorize attribute for the relevant authorization to run for that user.
+
+
+
+
+

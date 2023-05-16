@@ -1,16 +1,67 @@
-﻿@{
+﻿@model List<EPM.Mouser.Interview.Models.Product>
+
+@{
     ViewData["Title"] = "Test Page";
 }
 
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 
 <h1>In Stock items</h1>
+
+
+<table class="table table-bordered table-striped" styel="width:100%">
+    <thead>
+        <tr>
+            <th>
+            </th>
+            <th>
+                Name
+            </th>
+            <th>
+                TotalAmount
+            </th>
+            <th>
+                Available Stock
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model)
+        {
+            var color = "none";
+            if (product.InStockQuantity < 0)
+            {
+                color = "red";
+            }
+            else if (product.InStockQuantity < 10)
+            {
+                color = "orange";
+            }
+            <tr>
+                <td width="10%">
+                    <a asp-controller="Product" asp-action="GetProductDetails" asp-route-Id="@product.Id">Edit</a>
+                </td>
+                <td>
+                    @product.Name
+                </td>
+                <td>
+                    @product.InStockQuantity
+                </td>
+                <td style="background-color:@color;">
+                </td>
+            </tr>
+        }
+
+    </tbody>
+
+</table>
 
 @*
     Display a table here which shows the products with any Available stock
     - use the bootstrap table styling
     - Available stock = Total Stock - Reserved Stock
     - Columns shown:
-        - action => with a link to a placeholder product detail page. 
+        - action => with a link to a placeholder product detail page.
         - Name
         - Total Amount in stock
         - Available stock (this should be orange if < 10 and red < zero)

@@ -10,6 +10,7 @@ builder.Services.AddMvc().AddJsonOptions(opts =>
     var enumConverter = new JsonStringEnumConverter();
     opts.JsonSerializerOptions.Converters.Add(enumConverter);
 });
+builder.Services.AddHttpClient();
 builder.Services.SetupDiForWarehouse();
 
 var app = builder.Build();
